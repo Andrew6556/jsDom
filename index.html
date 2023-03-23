@@ -15,16 +15,30 @@
         <div class="popup__body">
             <div class="popup__content">
                 <form class="form" action="#">
-                    <h3 class="form__title text-center">Оставьте заявку</h3>
+                    <h3 class="form__title">Оставьте заявку</h3>
                     <p class="form__sabtitle">
                         Я свяжусь с вами удобным для <br>
                         вас спрособом и мы обсудим ваш проект
                     </p>
                     <div class="form__inner">
-                        <input class="form__input" id="form__forName" type="text" name="name" placeholder="Ваше имя">
+                        <!-- <input class="form__input" id="form__forName" type="text" name="name" placeholder="Ваше имя">
                         <input class="form__input"  id="form__forTel" type="text" name="tel" placeholder="Ваш телефон">
-                        <input class="form__input" id="form__forEmail" type="text" name="email" placeholder="Ваш Email">
-                        <button class="btn" type="submit">Оставить заявку</button>
+                        <input class="form__input" id="form__forEmail" type="text" name="email" placeholder="Ваш Email"> -->
+                        <div class="form__item">
+                            <label>
+                                <input checked type="radio" name="contacts" value="coding-notes" class="real-radio">
+                                <span class="custom-radio"></span>
+                                Заметки программиста
+                            </label>
+                        </div>
+                        <div class="form__item">
+                            <label>
+                                <input type="radio" name="contacts" value="travel-notes" class="real-radio">
+                                <span class="custom-radio"></span>
+                                Заметки путешественника
+                            </label>
+                        </div>
+                        <button class="form__btn btn" type="submit">Оставить заявку</button>
                     </div>
                 </form>
             </div>
