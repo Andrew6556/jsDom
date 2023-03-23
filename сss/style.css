@@ -65,7 +65,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     width: 97%;
 }
-
+.grey-text{
+    color: #808080;
+}
 .wrapper{
     width: 100%;
     min-height: 100%;
@@ -113,10 +115,21 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
     box-shadow: -2px 43px 122px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 46px 56px 36px 58px;
+    padding: 66px 56px 66px 58px;
+    position: relative;
 }
-
+.popup__close{
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+    position: absolute; 
+    top: 30px;
+    right: 30px;
+}
 /* form */
+.form__inner{
+    margin-bottom: 60px;
+}
 .form__title{
     font-size: 36px;
     font-weight: 700;
@@ -125,7 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 .form__sabtitle{
     font-size: 24px;
     line-height: 31px;
-    color: rgba(0, 0, 0, 0.5);
     margin-bottom: 32px;
 }
 .form__input{
@@ -133,19 +145,22 @@ h1, h2, h3, h4, h5, h6 {
     color:black;
     padding: 22px 30px;
     width: 100%;
+    background: transparent;
     border-bottom: 2px solid #DDDDDD;
 }
 .form__input:not(:last-child){
     margin-bottom: 24px;
 }
 .form__btn{
-    margin-top: 40px;
+    margin: 0 auto;
+}
+/* стилизация radio input */
+.form__radio{
+    margin-bottom: 34px;
 }
 .form__radio-title{
     font-size: 18px;
-    color: #808080;
 }
-/* стилизация radio input */
 .options{
     display: flex;
 }
@@ -159,11 +174,11 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 .options__input:checked + label{
-    color: #000000;
+    color: black;
 }
 .options__label{
+    color: #BEBEBE;
     font-size: 18px;
-    color: #808080;
     margin-left: 33px;
     cursor: pointer;
     position: relative;
@@ -199,6 +214,9 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 300ms ease-in-out 0s;
 }
 /* стилизация checkbox input */
+.form__checkbox{
+    margin-bottom: 46px;
+}
 .checkbox__input {
     display: none;
 }
@@ -218,7 +236,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .checkbox__label::before {
     content: "";
-    display: flex;
+    position: relative;
+    top: 5px;
     align-self: flex-start;
     justify-content: center;
     flex: 0 0 21px;
@@ -227,10 +246,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 12px;
 }
 .checkbox__label::after {
-    content: "s";
+    content: "";
     transition: all 200ms ease-in-out 0s;
     position: absolute;
-    background: url("../img/icons/price-list/done.svg") no-repeat;
+    top: 6px;
+    left: 2px;
+    background: url("../img/done.png") no-repeat;
+    /* align-self: center; */
     padding: 10px;
     transform: scale(0);
 }
