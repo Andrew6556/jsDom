@@ -111,11 +111,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .popup__content{
     background: white;
-    width: 665px;
+    width: 565px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
     box-shadow: -2px 43px 122px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 66px 56px 66px 58px;
+    padding: 36px 56px 36px 58px;
     position: relative;
 }
 .popup__close{
@@ -128,20 +128,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* form */
 .form__inner{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .form__title{
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 38px;
+    margin-bottom: 15px;
 }
 .form__sabtitle{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 31px;
-    margin-bottom: 32px;
 }
 .form__input{
-    font-size: 24px;
+    font-size: 18px;
     color:black;
     padding: 22px 30px;
     width: 100%;
@@ -149,14 +148,15 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 2px solid #DDDDDD;
 }
 .form__input:not(:last-child){
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 }
 .form__btn{
+    padding: 15px 0;
     margin: 0 auto;
 }
 /* стилизация radio input */
 .form__radio{
-    margin-bottom: 34px;
+    margin-bottom: 24px;
 }
 .form__radio-title{
     font-size: 18px;
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* стилизация checkbox input */
 .form__checkbox{
-    margin-bottom: 46px;
+    margin-bottom: 20px;
 }
 .checkbox__input {
     display: none;
@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 .checkbox__label {
-    font-size: 1.2rem;
+    font-size: 12px;
     display: flex;
     position: relative;
     cursor: pointer;
@@ -237,9 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 .checkbox__label::before {
     content: "";
     position: relative;
-    top: 5px;
-    align-self: flex-start;
-    justify-content: center;
+    top: 3px;
     flex: 0 0 21px;
     border: 1px solid #BEBEBE;
     height: 21px;
