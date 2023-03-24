@@ -121,10 +121,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .popup__close{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     display: block;
     position: absolute; 
-    top: 30px;
+    top: 18px;
     right: 30px;
 }
 /* form */
